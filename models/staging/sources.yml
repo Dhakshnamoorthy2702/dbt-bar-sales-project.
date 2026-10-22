@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: restaurants
+    database: raw
+    schema: restaurants
+    tables:
+      - name: north_america_restaurants

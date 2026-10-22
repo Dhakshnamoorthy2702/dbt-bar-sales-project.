@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: barlist
+    database: raw
+    schema: barlist
+    tables:
+      - name: bottles
