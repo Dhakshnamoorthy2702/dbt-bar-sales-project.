@@ -1,5 +1,4 @@
-select *,
-
+select *, 
 (old_stock + supply) as expected_total_stock,
 (sold * purchased_price) as expected_cost_of_sold,
 (sold * selling_price) as expected_sales_revenue,
