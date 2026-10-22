@@ -10,16 +10,14 @@ ABS(total_amount_pp - expected_cost_of_sold) as cost_difference,
 ABS(total_sales_amount - expected_sales_revenue) as sales_difference,
 ABS(profit - expected_profit) as profit_difference,
 
-
-
 case
     when stock_difference > 0.01
       or new_stock_difference > 0.01
       or cost_difference > 0.01
       or sales_difference > 0.01
       or profit_difference > 0.01
-    then 'mismatch'
-    else 'match'
+    then 'match'
+    else 'mismatch'
 end as mismatch_status,
 
 
