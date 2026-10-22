@@ -16,8 +16,8 @@ case
       or cost_difference > 0.01
       or sales_difference > 0.01
       or profit_difference > 0.01
-    then 'match'
-    else 'mismatch'
+    then 'mismatch'
+    else 'match'
 end as mismatch_status,
 
 
